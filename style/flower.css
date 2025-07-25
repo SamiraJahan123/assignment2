@@ -1,0 +1,255 @@
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.cart{
+  max-width: 22px;
+  max-height: 15px;
+}
+.bg-width{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.black{
+    color: rgba(37, 36, 50, 1);
+}
+.gray{
+    color: rgba(137, 135, 161, 1);
+}
+.display-flex{
+    display: flex;
+}
+.nav-item{
+    /* margin-left: 600px; */
+    justify-content: space-between;
+    
+}
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-anchor{
+     text-decoration:none;
+      display: flex;
+     align-items: center; 
+     gap: 5px;
+     
+}
+.nav-links{
+    margin-left: 30px;
+}
+ nav li{
+    list-style: none;
+}
+.banner{
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  gap: 20px;
+  margin-top: 100px;
+  
+}
+.banner-items,
+.banner-photo img {
+  width: 100%;     
+  max-width: 570px; 
+  margin: 0 auto; 
+  height: auto;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 65px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+.banner-description{
+    font-size: 22px;
+     padding: 0px;
+}
+.font-colour{
+    color: rgba(233, 90, 8, 1);
+}
+.edit-img{
+    width:570px;
+    height: 355px;
+}
+.plant-details{
+    text-align:center;
+    margin-top: 120px;
+}
+.plant-title,.plant-lover-title,.deal-title{
+    font-weight: bold;
+    font-size: 50px;
+}
+.plant-description{
+    text-align: center;
+    padding: 0px 126px;
+}
+.flower{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.flower-name,.flower-prize,.deal-details{
+    text-align: center;
+}
+.deal-details{
+   
+    align-items: center;
+}
+.btn-primary{
+   background-color: rgba(233, 90, 8, 1);
+   border: none; 
+   color: aliceblue;
+   padding: 10px 90px;
+   margin-bottom: 30px;
+}
+.plant-lover{
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+.plant-lover-description ,.deal-title ,.deal-pic{
+    margin-bottom: 20px;
+}
+.store-flower{
+     height: 450px;
+}
+.deal-pic1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.deal-pic{
+     display: grid;
+      grid-template-columns: 1fr 2fr;
+}
+.b-radius{
+    border-radius: 10px;
+}
+.last-section{
+ max-width: 1440px;
+ max-height: 533px;
+}
+.bg-img{
+  background-image:url('/assets/news-letter-bg.png');
+         max-width: 1440px;
+        max-height: 533px;
+      }
+      .join-branch{
+        font-weight: bold;
+        font-size: 50px;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .form-details input[type="email"]{
+         /* height: 30px; */
+         border: 5px;
+         background-color: aliceblue;
+         color: darkgray;
+         /* display: block; */
+         width: 55%;
+         padding: 10px  ;
+          margin-bottom: 24px; 
+          margin-left: 70px;
+         border: none;
+      }
+      .form-details input[type="submit"]{
+        /* height: 30px; */
+        border: 5px;
+        background-color: aliceblue;
+        color: white;
+        /* display: block; */
+        width: 15%;
+        padding: 10px ;
+        margin-bottom: 24px;
+        border: none;
+        background-color:rgba(233, 90, 8, 1);
+       /*  border-radius: 5px; */
+      }
+      .form-details{
+          display: flex;
+         flex-direction: column;
+         justify-content: space-around 
+
+      }
+
+.icon-size{
+    max-width: 36px;
+    max-height: 36px;
+    margin-right: 20px;
+}
+.footer-icon{
+    /* display: flex;
+     max-width:216px;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat( 4,1fr);
+    
+}
+.footer-details{
+    /* display:flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:576px) {
+      .part-1{
+        display: none;
+      }
+      .banner{
+        flex-direction: column-reverse;
+      }
+      .plant-description {
+       padding: 0 20px;
+        }
+      .flower{
+         grid-template-columns: repeat(2,1fr);
+         align-items: center;
+         width: 100%;
+      }
+      .plant-lover{
+        flex-direction:column;
+      }
+      
+      .deal-pic1{
+        gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+         width: 100%;
+          height: auto;
+          display: block;
+      }
+       .image-size{
+        max-width: 366px;
+        max-height: 206px;
+    }
+      .deal-pic{
+        gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+         width: 100%;
+         height: auto;
+         display: block;
+      }
+      .footer-details{
+        margin-top: 50px;
+       grid-template-columns: repeat(1,1fr);
+      }
+      body{
+        overflow-x:hidden;
+      }
+      .footer-details{
+        overflow-x:hidden;
+      }
+      .join-branch{
+        font-size: 20px;
+      }
+      
+}
+     
